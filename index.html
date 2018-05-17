@@ -33,8 +33,11 @@
 					 pageSelector: "#app"
 				  }
 			   });
+			   var $menu = $("#menu").mmenu({
+   //   options
+});
 			   var $icon = $("#my-icon");
-var API = $menu.data( "menu" );
+var API = $menu.data( "mmenu" );
 
 $icon.on( "click", function() {
    API.open();
