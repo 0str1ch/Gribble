@@ -23,38 +23,68 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.js"></script>
-	<script>
-			$(document).ready(function() {
-			   $("#menu").mmenu({
-				  // options
-			   }, {
-				  // configuration
-				  offCanvas: {
-					 pageSelector: "#app"
-				  }
-			   });
-			   var $menu = $("#menu").mmenu({
-   //   options
-});
-var $icon = $("#my-icon");
-var API = $menu.data( "mmenu" );
+	<!-- Navigation Config -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var $menu = $("#my-menu").mmenu({
+                "extensions": [
+                    "pagedim-black",
+                    "fx-listitems-fade",
+					"listview-justify",
+					"border-none"
+                ],
 
-$icon.on( "click", function() {
-   API.open();
-});
+                //   options
+                offCanvas: {
+					pageSelector: "#app",
+                    position: "right",
+                    zposition: "back"
+                },
 
-API.bind( "open:finish", function() {
-   setTimeout(function() {
-      $icon.addClass( "is-active" );
-   }, 100);
-});
-API.bind( "close:finish", function() {
-   setTimeout(function() {
-      $icon.removeClass( "is-active" );
-   }, 100);
-});
-			});
-		 </script>
+				"navbars": [
+            {
+               "position": "bottom",
+               "content": [
+                  "<a class='fa fa-envelope' href='mailto:hello@smithed,xyz/'></a>",
+				  "<a class='fa fa-facebook' href='#/'></a>"
+               ]
+            }
+         ],
+				navbar: {
+					add: false
+				},
+				backButton: {
+                    close: "true"
+                },
+				"setSelected": {
+            		"hover": true,
+					"current": true
+         }
+            });
+            var $icon = $("#my-icon");
+            var API = $menu.data("mmenu");
+
+            $icon.on("click", function() {
+                API.open();
+            });
+
+            API.bind("open:finish", function() {
+                setTimeout(function() {
+                    $icon.addClass("is-active");
+                }, 100);
+            });
+            API.bind("close:finish", function() {
+                setTimeout(function() {
+                    $icon.removeClass("is-active");
+                }, 100);
+            }); {
+                // configuration
+                offCanvas: {
+                    pageSelector: "#root"
+                }
+            };
+        });
+    </script>
 
     </head>
     <body>
