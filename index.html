@@ -34,7 +34,7 @@
 				  }
 			   });
 			   var $icon = $("#my-icon");
-var API = $menu.data( "mmenu" );
+var API = $menu.data( "menu" );
 
 $icon.on( "click", function() {
    API.open();
@@ -49,6 +49,7 @@ API.bind( "close:finish", function() {
    setTimeout(function() {
       $icon.removeClass( "is-active" );
    }, 100);
+});
 			});
 		 </script>
 
