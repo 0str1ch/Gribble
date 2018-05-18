@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="jsmith">
@@ -13,9 +13,11 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="msapplication-starturl" content="/">
 	<title>Tampa Bay's Premium Web Designer and Developer | Jeremy Smith</title>
-	<meta name="description" content="Bridging the quality and price gap between freelancer and agency for over ten years, Jeremy Smith is Tampa Bay's new hope for a better-looking web." />
+	<meta name="description" content="Bridging the quality and price gap between freelancer and agency for over ten years, Jeremy Smith is Tampa Bay's new hope for a better-looking web."
+	/>
 	<meta property="og:title" content="Tampa's Premium Web Designer and Developer | Jeremy Smith" />
-	<meta property="og:description" content="Bridging the quality and price gap between freelancer and agency for over ten years, Jeremy Smith is Tampa Bay's new hope for a better-looking web." />
+	<meta property="og:description" content="Bridging the quality and price gap between freelancer and agency for over ten years, Jeremy Smith is Tampa Bay's new hope for a better-looking web."
+	/>
 	<meta property="og:image:secure_url" content="https://richpreview.com/richpreview.png" />
 	<link href="https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Rubik:400,700" rel="stylesheet">
 	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -25,92 +27,104 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.js"></script>
 	<!-- Navigation Config -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var $menu = $("#my-menu").mmenu({
-                "extensions": [
-                    "pagedim-black",
-                    "fx-listitems-fade",
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $menu = $("#my-menu").mmenu({
+				"extensions": [
+					"pagedim-black",
+					"fx-listitems-fade",
 					"border-none"
-                ],
+				],
 
-                //   options
-                offCanvas: {
+				//   options
+				offCanvas: {
 					pageSelector: "#app",
-                    position: "right",
-                    zposition: "back"
-                },
+					position: "right",
+					zposition: "back"
+				},
 
-				"navbars": [
-            {
-               "position": "bottom",
-               "content": [
-                  "<a class='fa fa-envelope' href='mailto:hello@smithed,xyz/'></a>",
-				  "<a class='fa fa-facebook' href='#/'></a>"
-               ]
-            }
-         ],
+				"navbars": [{
+					"position": "bottom",
+					"content": [
+						"<a class='fa fa-envelope' href='mailto:hello@smithed,xyz/'></a>",
+						"<a class='fa fa-facebook' href='#/'></a>"
+					]
+				}],
 				navbar: {
 					add: false
 				},
 				backButton: {
-                    close: "true"
-                },
+					close: "true"
+				},
 				"setSelected": {
-            		"hover": true,
+					"hover": true,
 					"current": true
-         }
-            });
-            var $icon = $("#my-icon");
-            var API = $menu.data("mmenu");
+				}
+			});
+			var $icon = $("#my-icon");
+			var API = $menu.data("mmenu");
 
-            $icon.on("click", function() {
-                API.open();
-            });
+			$icon.on("click", function () {
+				API.open();
+			});
 
-            API.bind("open:finish", function() {
-                setTimeout(function() {
-                    $icon.addClass("is-active");
-                }, 100);
-            });
-            API.bind("close:finish", function() {
-                setTimeout(function() {
-                    $icon.removeClass("is-active");
-                }, 100);
-            }); {
-                // configuration
-                offCanvas: {
-                    pageSelector: "#root"
-                }
-            };
-        });
-    </script>
+			API.bind("open:finish", function () {
+				setTimeout(function () {
+					$icon.addClass("is-active");
+				}, 100);
+			});
+			API.bind("close:finish", function () {
+				setTimeout(function () {
+					$icon.removeClass("is-active");
+				}, 100);
+			}); {
+				// configuration
+				offCanvas: {
+					pageSelector: "#root"
+				}
+			};
+		});
+	</script>
 
-    </head>
-    <body>
-			<div id="app">
-					<div id="header" class="hero big">
-							<nav id="my-menu">
-									<ul>
-									   <li><a href="/">Home</a></li>
-									   <li><a href="/about/">About us</a></li>
-									   <li><a href="/about/">Pricing</a></li>
-									   <li><a href="/contact/">Contact</a></li>
-									</ul>
-								 </nav>
-					<button id="my-icon" class="hamburger hamburger--arrow-r" type="button">
-							<span class="hamburger-box">
-							   <span class="hamburger-inner"></span>
-							</span>
-						 </button>
-						 <div id="logo">
-								<svg class="brand" viewBox="0 0 100 100" width="100" height="100"><title>Gribble Alt G less angle</title><path fill="#000000" fill-rule="nonzero" d="M961.19,445.31c0,296.86-193.8,507.76-477.9,507.76C205.33,953.07,0,753.29,0,477.28S201.59,0,481.06,0C718.85,0,913.37,148.81,951.75,359.63H689.84C657,283.2,575.83,234.07,483.31,234.07c-135.89,0-227.48,98.26-227.48,243.22,0,143.47,90.1,241.73,227.48,241.73,95.38,0,177.17-46.16,205.7-116.12l-209.89.34,90-158Z"/></svg> 
-						 </div>
-					</div>
-					</div>
-					<div id="content"></div>
-					<div id="footer"></div>
-				 </div>
-				 <script type="text/javascript" src="/scripts/retina.min.js"></script>
-	</body>
-	</html>
+</head>
+
+<body>
+	<div id="app">
+		<div id="header" class="hero big">
+			<nav id="my-menu">
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/about/">About us</a>
+					</li>
+					<li>
+						<a href="/about/">Pricing</a>
+					</li>
+					<li>
+						<a href="/contact/">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<button id="my-icon" class="hamburger hamburger--arrow-r" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<div id="logo">
+				<svg class="brand" viewBox="0 0 100 100" width="100" height="100">
+					<title>Gribble Alt G less angle</title>
+					<path fill="#000000" fill-rule="nonzero" d="M961.19,445.31c0,296.86-193.8,507.76-477.9,507.76C205.33,953.07,0,753.29,0,477.28S201.59,0,481.06,0C718.85,0,913.37,148.81,951.75,359.63H689.84C657,283.2,575.83,234.07,483.31,234.07c-135.89,0-227.48,98.26-227.48,243.22,0,143.47,90.1,241.73,227.48,241.73,95.38,0,177.17-46.16,205.7-116.12l-209.89.34,90-158Z"
+					/>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div id="content"></div>
+	<div id="footer"></div>
+	</div>
+	<script type="text/javascript" src="/scripts/retina.min.js"></script>
+</body>
+
+</html>
