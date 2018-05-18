@@ -15,6 +15,11 @@ html {
     box-sizing: inherit
   }
 
+body,
+html {
+    margin: 0
+}
+
   /**
   Typography
   **/
