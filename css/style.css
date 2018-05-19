@@ -333,6 +333,7 @@ Desktop Header/Menu
   flex: 0 0 auto;
   margin-left: 24px;
   position: relative;
+  font-size: 0.8em;
 }
 
 .UnifiedNav-listItem--extraSpace {
