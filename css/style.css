@@ -34,7 +34,7 @@ Variables
   --main-bg-color: brown;
   --primary: red;
   --secondary: blue;
-  --primary-button-bg: linear-gradient(90deg,#0069ff,#1633ff);
+  --primary-button-bg: linear-gradient(90deg, #0069ff, #1633ff);
   --primary-button-color: #fff;
   --secondary-button-bg: purple;
   --secondary-button-color: #fff;
@@ -44,10 +44,14 @@ Variables
   Typography
   **/
 
+code {
+  font-family: Monaco, Consolas, Lucida Console, monospace
+}
+
 body {
   color: #222;
   font-family: 'Rubik', Helvetica, Arial, sans-serif;
- font-size: 90%;
+  font-size: 90%;
   line-height: 1.7;
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
@@ -145,11 +149,11 @@ Header
 }
 
 .hero-content h1 {
-color: #fff;
+  color: #fff;
 }
 
 .hero-content p {
-  color: hsla(0,0%,100%,.8);
+  color: hsla(0, 0%, 100%, .8);
 }
 
 /**
@@ -165,7 +169,7 @@ Buttons and Interactions
   overflow: visible;
   font: inherit;
   font-weight: bold;
-  color: rgba(3,27,78,.7);
+  color: rgba(3, 27, 78, .7);
   text-transform: none;
   display: inline-block;
   padding: 0 32px;
@@ -173,7 +177,7 @@ Buttons and Interactions
   vertical-align: middle;
   cursor: pointer;
   border-radius: 5px;
-  transition: all .25s cubic-bezier(.645,.045,.355,1);
+  transition: all .25s cubic-bezier(.645, .045, .355, 1);
   line-height: 3em;
   height: 3em;
   font-size: 1em;
