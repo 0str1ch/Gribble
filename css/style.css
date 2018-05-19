@@ -60,6 +60,13 @@ html {
   box-sizing: inherit
 }
 
+a {
+  background: transparent;
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 audio, canvas, iframe, img, svg, video {
   vertical-align: middle;
 }
@@ -340,6 +347,32 @@ Desktop Header/Menu
 
 .UnifiedNav-logoSVG {
   fill: #fff;
+}
+
+.UnifiedNav-button {
+  border-color: hsla(0,0%,100%,.5);
+  color: #fff;
+}
+.UnifiedNav-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #0069ff;
+  border-radius: 5px;
+  color: #0069ff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1;
+  margin: 0;
+  padding: 11px 16px 8px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: background-color .25s linear,border-color .25s linear,color .25s linear;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 /**
