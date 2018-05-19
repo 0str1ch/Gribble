@@ -83,7 +83,7 @@ body {
 Header
 **/
 
-.logo {
+#logo {
   display: block;
   position: absolute;
   width: 55px;
