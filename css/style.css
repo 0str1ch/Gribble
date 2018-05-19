@@ -27,6 +27,18 @@ svg:not(:root) {
 }
 
 /**
+Variables
+**/
+
+:root {
+  --main-bg-color: brown;
+  --primary: red;
+  --secondary: blue;
+  --primary-button: green;
+  --secondary-button: purple;
+}
+
+/**
   Typography
   **/
 
