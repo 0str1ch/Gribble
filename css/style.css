@@ -198,7 +198,7 @@ h2 { font-size: 2em; }
 
 .ui-Container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100em;
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -209,7 +209,7 @@ h2 { font-size: 2em; }
 }
 
 .ui-Section {
-  padding: 120px 0;
+  padding: 10em 0;
 }
 
 .whiteBackground {
@@ -223,7 +223,11 @@ h2 { font-size: 2em; }
 }
 
 .LineLength-normal {
-  max-width: 900px;
+  max-width: 75em;
+}
+
+.LineLength-normal-big {
+  max-width: 78.583em;
 }
 
 /**
