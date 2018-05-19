@@ -26,6 +26,11 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+video {
+  height: auto;
+  width: 100%
+}
+
 /**
 Variables
 **/
