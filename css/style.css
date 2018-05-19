@@ -152,6 +152,15 @@ body {
   padding: 0 16px;
 }
 
+.ui-Section-short {
+  padding-bottom: 64px;
+  padding-top: 64px;
+}
+
+.ui-Section {
+  padding: 120px 0;
+}
+
 /**
 Header
 **/
