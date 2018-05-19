@@ -136,6 +136,7 @@ h2 { font-size: 2em; }
 
 .big-title {
   line-height: 1.17;
+  letter-spacing: -2px;
 }
 
 .big {
