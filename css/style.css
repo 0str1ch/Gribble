@@ -14,7 +14,7 @@ html {
 *,
 *::before,
 *::after {
-  1 box-sizing: inherit
+  box-sizing: inherit
 }
 
 body,
@@ -32,7 +32,7 @@ svg:not(:root) {
 
 body {
   color: #222;
-  font-family: 'Rubik', Helvetica, Arial, sans-serif';
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
  font-size: 90%;
   line-height: 1.7;
   font-weight: 400;
