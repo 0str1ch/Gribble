@@ -8,6 +8,14 @@ Resets
 **/
 
 html {
+  font: 400 16px/1.5 'Rubik',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: #fff;
+  color: rgba(3,27,78,.7);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   box-sizing: border-box
 }
 
@@ -51,6 +59,16 @@ Variables
 
 code {
   font-family: Monaco, Consolas, Lucida Console, monospace
+}
+
+:not(pre)>code,:not(pre)>kbd,:not(pre)>samp {
+  font-size: 14px;
+  font-family: Monaco,Consolas,Lucida Console,monospace;
+  white-space: nowrap;
+  padding: 0 2px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  background: #fafafa
 }
 
 body {
