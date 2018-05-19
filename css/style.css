@@ -462,7 +462,7 @@ Desktop Header/Menu
 
 .UnifiedNav-button--transparent:hover,
 UnifiedNav-button--transparent:focus {
-    background-color: hsla(0,0%,100%,.1);
+  background-color: hsla(0, 0%, 100%, .1);
 }
 
 /**
