@@ -427,9 +427,26 @@ Desktop Header/Menu
   white-space: nowrap;
 }
 
-.UnifiedNav-transparent .UnifiedNav-button {
-  border-color: hsla(0, 0%, 100%, .5) !important;
-  color: #fff !important;
+.UnifiedNav-button--transparent {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-color: hsla(0, 0%, 100%, .5);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  line-height: 1;
+  margin: 0;
+  padding: 11px 16px 8px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: background-color .25s linear, border-color .25s linear, color .25s linear;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 /**
