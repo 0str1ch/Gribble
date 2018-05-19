@@ -130,10 +130,10 @@ Header
   margin: 0 1em 0 1em;
 }
 
-.hero-content h2 {
+.hero-content h1 {
 color: #fff;
 }
 
-.hero-content h1 {
+.hero-content p {
   color: hsla(0,0%,100%,.8);
 }
