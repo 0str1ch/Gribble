@@ -323,6 +323,10 @@ Desktop Header/Menu
   color: hsla(0,0%,100%,.7);
 }
 
+.UnifiedNav-link:hover {
+  color: #fff;
+}
+
 .UnifiedNav-listItem {
   display: inline-block;
   -ms-flex: 0 0 auto;
