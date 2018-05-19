@@ -200,7 +200,7 @@ h2 { font-size: 2em; }
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 1em;
 }
 
 .ui-Section-short {
@@ -275,7 +275,7 @@ Header
 
 .hero-content {
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 1.5em 1em;
 }
 
 .hero-content h1 {
