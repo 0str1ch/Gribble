@@ -145,6 +145,13 @@ body {
     text-align: center!important;
 }
 
+.ui-Container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 /**
 Header
 **/
@@ -193,7 +200,8 @@ Header
 }
 
 .hero-content {
-  margin: 0 1em 0 1em;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .hero-content h1 {
