@@ -379,6 +379,11 @@ Desktop Header/Menu
   white-space: nowrap;
 }
 
+.UnifiedNav-transparent .UnifiedNav-button {
+  border-color: hsla(0,0%,100%,.5);
+  color: #fff;
+}
+
 /**
   Hero
   **/
