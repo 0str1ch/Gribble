@@ -432,7 +432,7 @@ Desktop Header/Menu
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border-color: hsla(0, 0%, 100%, .5);
+  border: 1px solid hsla(0, 0%, 100%, .5);
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
