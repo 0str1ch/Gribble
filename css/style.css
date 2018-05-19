@@ -25,6 +25,10 @@ html {
   box-sizing: inherit
 }
 
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
 *+address, *+blockquote, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul {
   margin-top: 16px;
 }
@@ -280,4 +284,21 @@ Buttons and Interactions
   background: linear-gradient(90deg,#0069ff,#0069ff);
   color: hsla(0,0%,100%,.9);
   color: #fff;
+}
+
+.ui-Button-IconRight .ui-Loader, .ui-Button-IconRight svg {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.ui-Icon {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  position: relative;
+  top: -1px;
+  max-width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
