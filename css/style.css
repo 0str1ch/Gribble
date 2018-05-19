@@ -234,11 +234,6 @@ Layout and Structure
   Modifiers
   **/
 
-.big-title {
-  line-height: 1.17;
-  letter-spacing: -2px;
-}
-
 .big {
   width: 100%;
   height: auto
@@ -252,9 +247,20 @@ Layout and Structure
   list-style: none;
 }
 
+.Text-XXL {
+  line-height: 1.17;
+  letter-spacing: -2px;
+}
+
 .Text-XL {
   color: var(--primary);
   letter-spacing: -.9px;
+}
+
+.Text-L {
+  color: var(--primary);
+  letter-spacing: -.9px;
+  line-height: 1.44;
 }
 
 .jcb {
