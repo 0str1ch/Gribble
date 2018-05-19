@@ -205,6 +205,12 @@ h2 { font-size: 2em; }
   background: #fff;
 }
 
+.LineLength {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /**
 Header
 **/
