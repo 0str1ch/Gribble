@@ -243,6 +243,11 @@ Layout and Structure
   width: 100%;
 }
 
+.vAlign {
+  align-items: center;
+  justify-content: center;
+}
+
 .removeList {
   list-style: none;
 }
