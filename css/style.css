@@ -405,11 +405,6 @@ Desktop Header/Menu
   fill: #fff;
 }
 
-.UnifiedNav-transparent .UnifiedNav-button {
-  border-color: hsla(0, 0%, 100%, .5) !important;
-  color: #fff !important;
-}
-
 .UnifiedNav-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -430,6 +425,11 @@ Desktop Header/Menu
   transition: background-color .25s linear, border-color .25s linear, color .25s linear;
   vertical-align: middle;
   white-space: nowrap;
+}
+
+.UnifiedNav-transparent .UnifiedNav-button {
+  border-color: hsla(0, 0%, 100%, .5) !important;
+  color: #fff !important;
 }
 
 /**
