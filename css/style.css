@@ -25,6 +25,13 @@ html {
   box-sizing: inherit
 }
 
+*+address, *+blockquote, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul {
+  margin-top: 16px;
+}
+address, blockquote, dl, fieldset, figure, ol, p, pre, ul {
+  margin: 0 0 16px;
+}
+
 body,
 html {
   margin: 0
