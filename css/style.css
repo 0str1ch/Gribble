@@ -528,13 +528,6 @@ Buttons and Interactions
   color: #031b4e;
 }
 
-.ui-Button-outline.is-active,
-.ui-Button-outline:focus,
-.ui-Button-outline:hover {
-  color: #fff;
-  background-color: rgba(3, 27, 78, .7);
-}
-
 .ui-Button.is-active,
 .ui-Button:focus,
 .ui-Button:hover {
@@ -548,6 +541,13 @@ Buttons and Interactions
   background: linear-gradient(90deg, #0069ff, #0069ff);
   color: hsla(0, 0%, 100%, .9);
   color: #fff;
+}
+
+.ui-Button-outline.is-active,
+.ui-Button-outline:focus,
+.ui-Button-outline:hover {
+  color: #fff;
+  background-color: rgba(3, 27, 78, .7);
 }
 
 .ui-Button-IconRight .ui-Loader,
