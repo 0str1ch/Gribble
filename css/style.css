@@ -211,6 +211,10 @@ h2 { font-size: 2em; }
   margin-right: auto;
 }
 
+.LineLength--normal {
+  max-width: 900px;
+}
+
 /**
 Header
 **/
