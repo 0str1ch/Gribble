@@ -255,11 +255,6 @@ Layout and Structure
 .Text-XL {
   color: var(--primary);
   letter-spacing: -.9px;
-}
-
-.Text-L {
-  color: var(--primary);
-  letter-spacing: -.9px;
   line-height: 1.44;
 }
 
