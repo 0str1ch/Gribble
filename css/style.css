@@ -121,17 +121,3 @@ Header
   background: linear-gradient(to right, #2B32B2, #1488CC);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.hero-background-glare {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-image: radial-gradient(ellipse closest-side, hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, 0));
-  background-size: 100% 130%;
-  background-position: 50% 150%;
-  background-repeat: no-repeat;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
