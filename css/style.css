@@ -122,6 +122,10 @@ h2 { font-size: 3em; }
   Modifiers
   **/
 
+.big-title h1 {
+  line-height: 1.17;
+}
+
 .big {
   width: 100%;
   height: 50vh
