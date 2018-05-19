@@ -142,6 +142,11 @@ h2 { font-size: 2em; }
   width: 100%;
 }
 
+.Text-XL {
+  color: var(--primary)
+  letter-spacing: -.9px;
+}
+
 .SiteFrame {
   -ms-flex-align: stretch;
   align-items: stretch;
