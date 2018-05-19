@@ -6,6 +6,7 @@ by Jeremy Smith
 /**
 Mobile
 **/
+
 @media screen and (min-width: 50em) {
   .desktop-menu {
     display: block;
@@ -28,7 +29,9 @@ Mobile
 Resets
 **/
 
-html { font-size: calc(1em + 1vw); }
+html {
+  font-size: calc(1em + 1vw);
+}
 
 @media screen and (min-width: 50em) {
   html {
@@ -43,11 +46,11 @@ html { font-size: calc(1em + 1vw); }
 }
 
 html {
-  font-family: 'Rubik',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   background: #fff;
-  color: rgba(3,27,78,.7);
+  color: rgba(3, 27, 78, .7);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -67,14 +70,36 @@ a {
   cursor: pointer;
 }
 
-audio, canvas, iframe, img, svg, video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle;
 }
 
-*+address, *+blockquote, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul {
+*+address,
+*+blockquote,
+*+dl,
+*+fieldset,
+*+figure,
+*+ol,
+*+p,
+*+pre,
+*+ul {
   margin-top: 16px;
 }
-address, blockquote, dl, fieldset, figure, ol, p, pre, ul {
+
+address,
+blockquote,
+dl,
+fieldset,
+figure,
+ol,
+p,
+pre,
+ul {
   margin: 0 0 16px;
 }
 
@@ -98,7 +123,17 @@ video {
   text-shadow: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
   display: block;
 }
 
@@ -124,9 +159,11 @@ code {
   font-family: Monaco, Consolas, Lucida Console, monospace
 }
 
-:not(pre)>code,:not(pre)>kbd,:not(pre)>samp {
+:not(pre)>code,
+:not(pre)>kbd,
+:not(pre)>samp {
   font-size: 14px;
-  font-family: Monaco,Consolas,Lucida Console,monospace;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
   white-space: nowrap;
   padding: 0 2px;
   border: 1px solid #f1f1f1;
@@ -146,17 +183,31 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1,h2,h3,h4,h5,h6,p {
- line-height: 1.45;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.45;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0 0 16px;
   text-transform: none;
 }
 
-h1 { font-size: 3em; }
-h2 { font-size: 2em; }
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
 
 /**
   Modifiers
@@ -221,7 +272,7 @@ h2 { font-size: 2em; }
 }
 
 .ui-txtCenter {
-    text-align: center!important;
+  text-align: center !important;
 }
 
 .ui-Container {
@@ -299,7 +350,7 @@ Desktop Header/Menu
 .UnifiedNav {
   -ms-flex-align: center;
   align-items: center;
-  color: rgba(3,27,78,.7);
+  color: rgba(3, 27, 78, .7);
   display: -ms-flexbox;
   display: flex;
   height: 90px;
@@ -320,7 +371,7 @@ Desktop Header/Menu
 .UnifiedNav-link {
   text-decoration: none;
   white-space: nowrap;
-  color: hsla(0,0%,100%,.7);
+  color: hsla(0, 0%, 100%, .7);
 }
 
 .UnifiedNav-link:hover {
@@ -354,10 +405,11 @@ Desktop Header/Menu
   fill: #fff;
 }
 
-.UnifiedNav-button {
-  border-color: hsla(0,0%,100%,.5);
+.UnifiedNav-transparent .UnifiedNav-button {
+  border-color: hsla(0, 0%, 100%, .5);
   color: #fff;
 }
+
 .UnifiedNav-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -375,14 +427,9 @@ Desktop Header/Menu
   text-align: center;
   text-decoration: none;
   text-transform: none;
-  transition: background-color .25s linear,border-color .25s linear,color .25s linear;
+  transition: background-color .25s linear, border-color .25s linear, color .25s linear;
   vertical-align: middle;
   white-space: nowrap;
-}
-
-.UnifiedNav-transparent .UnifiedNav-button {
-  border-color: hsla(0,0%,100%,.5);
-  color: #fff;
 }
 
 /**
@@ -452,27 +499,35 @@ Buttons and Interactions
   border: 1px solid currentColor;
   position: relative;
   z-index: 2;
-  border-color: rgba(3,27,78,.1);
-  box-shadow: 0 1px 2px rgba(3,27,78,.06);
+  border-color: rgba(3, 27, 78, .1);
+  box-shadow: 0 1px 2px rgba(3, 27, 78, .06);
   color: #031b4e;
 }
 
-.ui-Button-outline.is-active, .ui-Button-outline:focus, .ui-Button-outline:hover {
+.ui-Button-outline.is-active,
+.ui-Button-outline:focus,
+.ui-Button-outline:hover {
   color: #fff;
-  background-color: rgba(3,27,78,.7);
+  background-color: rgba(3, 27, 78, .7);
 }
-.ui-Button.is-active, .ui-Button:focus, .ui-Button:hover {
-  color: rgba(3,27,78,.7);
+
+.ui-Button.is-active,
+.ui-Button:focus,
+.ui-Button:hover {
+  color: rgba(3, 27, 78, .7);
   background: #dfdfdf;
 }
 
-.ui-Button-primary.is-active, .ui-Button-primary:focus, .ui-Button-primary:hover {
-  background: linear-gradient(90deg,#0069ff,#0069ff);
-  color: hsla(0,0%,100%,.9);
+.ui-Button-primary.is-active,
+.ui-Button-primary:focus,
+.ui-Button-primary:hover {
+  background: linear-gradient(90deg, #0069ff, #0069ff);
+  color: hsla(0, 0%, 100%, .9);
   color: #fff;
 }
 
-.ui-Button-IconRight .ui-Loader, .ui-Button-IconRight svg {
+.ui-Button-IconRight .ui-Loader,
+.ui-Button-IconRight svg {
   margin-right: 0;
   margin-left: 8px;
 }
