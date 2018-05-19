@@ -223,7 +223,7 @@ h2 { font-size: 2em; }
 }
 
 .LineLength-normal {
-  max-width: 75em;
+  max-width: 900px;
 }
 
 .LineLength-normal-big {
