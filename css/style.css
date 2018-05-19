@@ -137,9 +137,17 @@ body {
   text-align: center;
 }
 
+.ui-txtCenter {
+    text-align: center!important;
+}
+
 /**
 Header
 **/
+
+.hamburger:focus {
+  outline: none;
+}
 
 #logo {
   display: block;
