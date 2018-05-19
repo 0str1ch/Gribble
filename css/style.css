@@ -97,6 +97,18 @@ Header
   z-index: 5;
 }
 
+.logo-link {
+  display: block;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 3;
+}
+
 /**
   Hero
   **/
