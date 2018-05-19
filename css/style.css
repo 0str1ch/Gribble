@@ -449,6 +449,11 @@ Desktop Header/Menu
   white-space: nowrap;
 }
 
+.UnifiedNav-button--transparent:hover,
+UnifiedNav-button--transparent:focus {
+    background-color: hsla(0,0%,100%,.1);
+}
+
 /**
   Hero
   **/
