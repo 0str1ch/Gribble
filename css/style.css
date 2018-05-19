@@ -231,7 +231,7 @@ h2 { font-size: 2em; }
 }
 
 /**
-Header
+Mobile Header
 **/
 
 .hamburger:focus {
@@ -262,6 +262,42 @@ Header
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 3;
+}
+
+/**
+Desktop Header/Menu
+**/
+
+.UnifiedNav-link {
+  text-decoration: none;
+  white-space: nowrap;
+  color: hsla(0,0%,100%,.7);
+}
+
+.UnifiedNav-listItem {
+  display: inline-block;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-left: 24px;
+  position: relative;
+}
+
+.UnifiedNav-listItem--extraSpace {
+  margin-left: 64px;
+}
+
+.UnifiedNav-spaceRight {
+  margin-right: auto;
+}
+
+.UnifiedNav-siteLogo {
+  display: block;
+  position: relative;
+  top: -3px;
+}
+
+.UnifiedNav-logoSVG {
+  fill: #fff;
 }
 
 /**
