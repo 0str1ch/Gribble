@@ -172,13 +172,6 @@ code {
   background: #fafafa
 }
 
-/*body {
-  color: #222;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}*/
-
 h1,
 h2,
 h3,
@@ -280,6 +273,10 @@ padding-bottom: 1em;
   line-height: 1.44;
 }
 
+Text-L {
+  font-size: 1.125em;
+}
+
 @media (min-width: 768px) {
 .Text-regular {
     line-height: 1.6;
@@ -291,6 +288,7 @@ padding-bottom: 1em;
     font-size: 1.25em;
     line-height: 1.4;
 }
+
 
 .jcb {
   -webkit-box-pack: justify;
