@@ -719,3 +719,17 @@ hr {
   border: 0;
   border-top: 1px solid #e5e8ed;
 }
+
+@media (min-width: 768px) {
+.ui-Section--netBreak {
+    background-size: 100%;
+}
+}
+
+.ui-Section--netBreak {
+    background-image: url(../Gribble/svg/linegraph.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    padding-top: 171px;
+}
