@@ -272,6 +272,18 @@ Layout and Structure
   line-height: 1.44;
 }
 
+@media (min-width: 768px) {
+.Text-regular {
+    line-height: 1.6;
+}
+}
+
+.Text-regular {
+    color: var(--paragraph-color);
+    font-size: 1.25em;
+    line-height: 1.4;
+}
+
 .jcb {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
