@@ -65,7 +65,7 @@ html {
 
 a {
   background: transparent;
-  color: var(--primary);
+  color: var(--secondary);
   text-decoration: none;
   cursor: pointer;
 }
