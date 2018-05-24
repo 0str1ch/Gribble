@@ -700,3 +700,23 @@ UI Components [Cards]
 .ClickCard p {
   color: var(--paragraph-color);
 }
+
+/**
+UI Components [ETC]
+**/
+
+.Rule-bold {
+  background-color: #e5e8ed;
+  border: 0;
+  display: block;
+  height: 0.25em;
+  margin: 0 auto;
+  width: 3.8em;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #e5e8ed;
+}
