@@ -630,6 +630,11 @@ Buttons and Interactions
   flex-shrink: 0;
 }
 
+.ui-Icon-Large {
+  width: 2em;
+  height: 2em;
+}
+
 /**
 UI Components [Cards]
 **/
