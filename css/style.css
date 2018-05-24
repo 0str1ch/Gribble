@@ -338,6 +338,10 @@ Layout and Structure
   text-align: center;
 }
 
+.ClickCard-itemLink {
+  margin-top: auto;
+}
+
 .ui-Section-short {
   padding-bottom: 64px;
   padding-top: 64px;
