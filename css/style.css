@@ -343,6 +343,14 @@ padding-bottom: 1em;
   }
 }
 
+@media (min-width: 768px) {
+  .ui-Col-2 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
 .ui-u-flexDeepMatch>* {
   display: -ms-flexbox;
   display: flex;
