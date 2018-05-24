@@ -297,6 +297,8 @@ Layout and Structure
 }
 
 .ui-GridContainer>* {
+  padding-left: 16px;
+    padding-top: 16px;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
