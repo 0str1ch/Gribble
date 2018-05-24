@@ -243,6 +243,14 @@ Layout and Structure
   Modifiers
   **/
 
+.margin-top {
+  margin-top: 0.5em;
+}
+
+.pad-bottom-2x {
+padding-bottom: 1em;
+}
+
 .big {
   width: 100%;
   height: auto
@@ -358,20 +366,6 @@ Layout and Structure
   margin-left: -1em;
   margin-top: -1em;
   list-style: none;
-}
-
-.ClickCard-itemContent {
-  -ms-flex-align: center;
-  align-items: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-}
-
-.ClickCard-itemLink {
-  margin-top: auto;
 }
 
 .ui-Section-short {
@@ -668,6 +662,20 @@ Buttons and Interactions
 /**
 UI Components [Cards]
 **/
+
+.ClickCard-itemContent {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ClickCard-itemLink {
+  margin-top: auto;
+}
 
 .ClickCard:hover {
   box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.08), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
