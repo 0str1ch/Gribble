@@ -335,6 +335,10 @@ padding-bottom: 1em;
   max-width: 100%;
 }
 
+.ui-GridContainer>* :last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   .ui-Col-3 {
     -ms-flex-preferred-size: 33.33333%;
