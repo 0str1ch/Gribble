@@ -594,6 +594,15 @@ UnifiedNav-button--transparent:focus {
   color: hsla(0, 0%, 100%, .8);
 }
 
+.hero-signupBox {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(3,27,78,.1);
+  box-shadow: 0 10px 20px rgba(3,27,78,.1);
+  margin: 0;
+  padding: 2em;
+}
+
 /**
 Buttons and Interactions
 **/
