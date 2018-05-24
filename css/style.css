@@ -297,7 +297,7 @@ Layout and Structure
 }
 
 @media (min-width: 768px) {
-  .bui-Col-4\@medium {
+  .ui-Col-3 {
     -ms-flex-preferred-size: 33.33333%;
     flex-basis: 33.33333%;
     max-width: 33.33333%;
@@ -326,6 +326,16 @@ Layout and Structure
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.ClickCard-itemContent {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
 }
 
 .ui-Section-short {
