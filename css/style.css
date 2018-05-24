@@ -143,7 +143,7 @@ Variables
 
 :root {
   --main-bg-color: brown;
-  --primary: red;
+  --primary: green;
   --secondary: blue;
   --primary-button-bg: linear-gradient(90deg, #0069ff, #1633ff);
   --primary-button-color: #fff;
@@ -199,6 +199,7 @@ h3,
 h4 {
   margin: 0 0 16px;
   text-transform: none;
+  color: var(--primary);
 }
 
 h1 {
@@ -207,6 +208,10 @@ h1 {
 
 h2 {
   font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 /**
