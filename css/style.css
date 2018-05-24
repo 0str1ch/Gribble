@@ -277,18 +277,17 @@ padding-bottom: 1em;
   font-size: 1.125em;
 }
 
-@media (min-width: 768px) {
-.Text-regular {
-    line-height: 1.6;
-}
-}
-
 .Text-regular {
     color: var(--paragraph-color);
     font-size: 1.25em;
     line-height: 1.4;
 }
 
+@media (min-width: 768px) {
+  .Text-regular {
+      line-height: 1.6;
+  }
+  }
 
 .jcb {
   -webkit-box-pack: justify;
