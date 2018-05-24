@@ -296,18 +296,18 @@ Layout and Structure
   padding: 0 1em;
 }
 
+.ui-GridContainer>* {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
   .ui-Col-3 {
     -ms-flex-preferred-size: 33.33333%;
     flex-basis: 33.33333%;
     max-width: 33.33333%;
   }
-}
-
-.ui-GridContainer>* {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
 }
 
 .ui-u-flexDeepMatch>* {
