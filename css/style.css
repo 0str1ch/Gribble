@@ -340,6 +340,12 @@ Layout and Structure
   flex-wrap: wrap;
 }
 
+.bui-u-flexDeepMatch>*>* {
+  -ms-flex: none;
+  flex: none;
+  width: 100%;
+}
+
 .ui-GridContainer {
   display: -ms-flexbox;
   display: flex;
