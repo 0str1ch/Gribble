@@ -296,6 +296,38 @@ Layout and Structure
   padding: 0 1em;
 }
 
+@media (min-width: 768px) {
+  .bui-Col-4\@medium {
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+.ui-GridContainer>* {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.ui-u-flexDeepMatch>* {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.ui-GridContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .ui-Section-short {
   padding-bottom: 64px;
   padding-top: 64px;
@@ -590,6 +622,7 @@ UI Components [Cards]
   box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.08), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
   transform: translateY(-5px);
 }
+
 .card {
   width: 170px;
   border-radius: 12px;
