@@ -354,6 +354,10 @@ padding-bottom: 1em;
   width: 100%;
 }
 
+.ui-GridContainer>* :last-child {
+  margin-bottom: 0;
+}
+
 .ui-GridContainer {
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +375,10 @@ padding-bottom: 1em;
 .ui-Section-short {
   padding-bottom: 64px;
   padding-top: 64px;
+}
+
+.ui-Section :last-child {
+  margin-bottom: 0;
 }
 
 .ui-Section {
