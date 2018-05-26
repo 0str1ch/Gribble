@@ -26,6 +26,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> <!-- Smooth Scrolling plugin -->
+
 	<!-- Navigation Config -->
 	<script type="text/javascript">
 		$(document).ready(function () {
@@ -388,7 +390,10 @@
 		<div id="footer">
 		</div>
 	</div>
-	<script type="text/javascript" src="/Gribble/scripts/retina.min.js"></script>
+	<script type="text/javascript" src="/Gribble/scripts/retina.min.js"></script> <!-- Retina Images init-->
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script> <!-- Smooth Scrool init -->
 </body>
 
 </html>
