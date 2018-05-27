@@ -217,13 +217,13 @@ q {
   quotes: "“" "”";
 }
 
-ul {
+.fancy-list ul {
   margin: 0.75em 0;
   padding: 0 1em;
   list-style: none;
 }
 
-li:before {
+.fancy-list li:before {
   /** Triangle List **/
   content: "";
   border-color: transparent #111;
