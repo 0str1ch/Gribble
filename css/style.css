@@ -623,12 +623,14 @@ UnifiedNav-button--transparent:focus {
   padding: 1.5em 1em;
 }
 
-.hero-content h1 {
+.hero-title {
   color: #fff;
+
 }
 
-.hero-content p {
+.hero-text {
   color: hsla(0, 0%, 100%, .8);
+
 }
 
 .hero-signupBox {
