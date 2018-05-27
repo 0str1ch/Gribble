@@ -182,7 +182,8 @@ h6 {
   line-height: 1.4;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-weight: 400;
 }
 
@@ -222,7 +223,8 @@ ul {
   list-style: none;
 }
 
-li:before { /** Triangle List **/
+li:before {
+  /** Triangle List **/
   content: "";
   border-color: transparent #111;
   border-style: solid;
@@ -270,7 +272,7 @@ Layout and Structure
 }
 
 .pad-bottom-2x {
-padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .big {
@@ -307,16 +309,16 @@ padding-bottom: 1em;
 }
 
 .Text-regular {
-    color: var(--paragraph-color);
-    font-size: 1.25em;
-    line-height: 1.4;
+  color: var(--paragraph-color);
+  font-size: 1.25em;
+  line-height: 1.4;
 }
 
 @media (min-width: 768px) {
   .Text-regular {
-      line-height: 1.6;
+    line-height: 1.6;
   }
-  }
+}
 
 .jcb {
   -webkit-box-pack: justify;
@@ -353,7 +355,7 @@ padding-bottom: 1em;
 
 .ui-GridContainer>* {
   padding-left: 1em;
-    padding-top: 1em;
+  padding-top: 1em;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
@@ -629,8 +631,8 @@ UnifiedNav-button--transparent:focus {
 .hero-signupBox {
   background-color: #fff;
   border-radius: 12px;
-  border: 1px solid rgba(3,27,78,.1);
-  box-shadow: 0 10px 20px rgba(3,27,78,.1);
+  border: 1px solid rgba(3, 27, 78, .1);
+  box-shadow: 0 10px 20px rgba(3, 27, 78, .1);
   margin: 0;
   padding: 2em;
 }
@@ -774,6 +776,7 @@ UI Components [ETC]
   margin: 0 auto;
   width: 3.8em;
 }
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -783,42 +786,70 @@ hr {
 }
 
 @media (min-width: 768px) {
-.ui-Section--netBreak {
+  .ui-Section--netBreak {
     background-size: 100%;
-}
+  }
 }
 
 .ui-Section--netBreak {
-    background-image: url(../svg/linegraph.svg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 200%;
-    padding-top: 171px;
+  background-image: url(../svg/linegraph.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  padding-top: 171px;
 }
 
 /**
 Form Styling Stuff
 **/
 
-input:not([type]), input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+input:not([type]),
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
   height: 3em;
   max-width: 100%;
   padding: 0 1em;
   border: 1px solid #f1f1f1;
   background: #fff;
-  color: rgba(3,27,78,.7);
-  transition: all .25s cubic-bezier(.645,.045,.355,1);
+  color: rgba(3, 27, 78, .7);
+  transition: all .25s cubic-bezier(.645, .045, .355, 1);
   border-radius: 5px;
   width: 100%;
   position: relative;
 }
 
-input:not([type]), input[type=datetime], input[type=email], input[type=number], input[type=password], input[type=range], input[type=search], input[type=tel], input[type=text], input[type=url] {
+input:not([type]),
+input[type=datetime],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-input, select, textarea {
+
+input,
+select,
+textarea {
   margin: 0;
   border-radius: 0;
   font: inherit;
