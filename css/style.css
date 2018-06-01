@@ -492,13 +492,18 @@ Mobile Header
 Desktop Header/Menu
 **/
 
+@media (min-width: 768px) {
+.UnifiedNav {
+  height: 90px;
+}
+}
+
 .UnifiedNav {
   -ms-flex-align: center;
   align-items: center;
   color: rgba(3, 27, 78, .7);
   display: -ms-flexbox;
   display: flex;
-  height: 90px;
   position: relative;
   z-index: 10;
 }
