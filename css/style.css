@@ -606,7 +606,7 @@ UnifiedNav-button--transparent:focus {
   **/
 
 .hero {
-  background: #2e4be0;
+  background: var(--main-bg-color);
   /* fallback for old browsers
   background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
   /* Chrome 10-25, Safari 5.1-6
@@ -616,6 +616,7 @@ UnifiedNav-button--transparent:focus {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 30rem;
 }
 
 .hero-content {
