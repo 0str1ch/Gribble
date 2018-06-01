@@ -614,6 +614,12 @@ UnifiedNav-button--transparent:focus {
   Hero
   **/
 
+@media (min-width: 2000px) {
+  .hero {
+background-size: 101%;
+  }
+}
+
 .hero {
   background: var(--main-bg-color);
   /* fallback for old browsers
