@@ -620,8 +620,8 @@ UnifiedNav-button--transparent:focus {
   background-image: url(../svg/testbgwide.svg);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 30rem;
+  background-size: 101%;
+  min-height: 33rem;
 }
 
 .hero-content {
