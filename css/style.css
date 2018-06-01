@@ -620,7 +620,7 @@ UnifiedNav-button--transparent:focus {
   background-image: url(../svg/testbgwide.svg);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 101%;
+  background-size: cover;
   min-height: 33rem;
 }
 
