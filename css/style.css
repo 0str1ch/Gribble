@@ -616,7 +616,7 @@ UnifiedNav-button--transparent:focus {
 
 @media (min-width: 2000px) {
   .hero {
-background-size: 101%;
+background-size: 101% !important;
   }
 }
 
