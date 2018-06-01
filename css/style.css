@@ -242,7 +242,7 @@ q {
 Layout and Structure
 **/
 
-.SiteFrame {
+.siteFrame {
   -ms-flex-align: stretch;
   align-items: stretch;
   display: -ms-flexbox;
@@ -254,7 +254,7 @@ Layout and Structure
   position: relative;
 }
 
-.SiteFrame-body {
+.siteFrame-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
