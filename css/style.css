@@ -634,16 +634,16 @@ UnifiedNav-button--transparent:focus {
 }
 
 .hero {
-  background: var(--main-bg-color);
   /* fallback for old browsers
   background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
   /* Chrome 10-25, Safari 5.1-6
   background: linear-gradient(to right, #2B32B2, #1488CC);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-image: url(../svg/minty.svg);
+  background-image: url(../svg/minty-wave.svg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  background: var(--main-bg-color);
   min-height: 30rem;
 }
 
