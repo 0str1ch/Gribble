@@ -643,7 +643,7 @@ UnifiedNav-button--transparent:focus {
   z-index: 2;
 }
 
-#particle-js, #particle-js > canvas {
+#particles-js, #particles-js > canvas {
   z-index: 1 !important;
 }
 
