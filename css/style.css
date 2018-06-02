@@ -639,6 +639,14 @@ UnifiedNav-button--transparent:focus {
   min-height: 30rem;
 }
 
+* {
+  z-index: 2;
+}
+
+#particle-js, #particle-js > canvas {
+  z-index: 1 !important;
+}
+
 canvas {
   display: block;
   vertical-align: bottom;
