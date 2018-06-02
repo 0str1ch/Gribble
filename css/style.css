@@ -276,6 +276,10 @@ Layout and Structure
   margin-top: 0.5em;
 }
 
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
 .pad-XL {
   padding-top: 4em;
   padding-bottom: 4em;
