@@ -821,11 +821,11 @@ hr {
 }
 
 .ui-Section--netBreak {
-  background-image: url(../svg/linegraph.svg);
+  /*background-image: url(../svg/linegraph.svg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: 200%;
-  padding-top: 171px;
+  padding-top: 171px;*/
 }
 
 /**
