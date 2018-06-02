@@ -838,8 +838,11 @@ Form Styling Stuff
 
 label {
   position: absolute;
-  top: 13%;
-  left: 5%;
+  top: -12%;
+  background-color: currentColor;
+  padding-left: 1px;
+  padding-right: 1px;
+  left: 5.2%;
   font-size: 0.5em;
   z-index: 2;
   opacity: 1;
