@@ -65,6 +65,10 @@ html {
   font-kerning: auto;
 }
 
+* {
+  z-index: 2;
+}
+
 a {
   background: transparent;
   color: var(--secondary);
@@ -639,16 +643,12 @@ UnifiedNav-button--transparent:focus {
   min-height: 30rem;
 }
 
-* {
-  z-index: 2;
-}
-
 #particles-js, #particles-js > canvas {
   z-index: 1 !important;
 }
 
 canvas {
-  display: block;
+  display: flex;
   vertical-align: bottom;
 }
 
