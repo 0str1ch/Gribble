@@ -832,6 +832,11 @@ hr {
 Form Styling Stuff
 **/
 
+.formGroup {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
 label {
   position: absolute;
   top: 0;
