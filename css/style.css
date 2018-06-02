@@ -664,6 +664,11 @@ UnifiedNav-button--transparent:focus {
 Buttons and Interactions
 **/
 
+button:focus,
+select:focus {
+  outline: none;
+}
+
 .ui-Button {
   -webkit-appearance: none;
   -moz-appearance: none;
