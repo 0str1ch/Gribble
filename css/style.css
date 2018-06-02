@@ -822,6 +822,31 @@ hr {
 Form Styling Stuff
 **/
 
+input:focus:not([type]),
+input:focus[type=color],
+input:focus[type=date],
+input:focus[type=datetime-local],
+input:focus[type=datetime],
+input:focus[type=email],
+input:focus[type=month],
+input:focus[type=number],
+input:focus[type=password],
+input:focus[type=search],
+input:focus[type=tel],
+input:focus[type=text],
+input:focus[type=time],
+input:focus[type=url],
+input:focus[type=week],
+select:focus,
+textarea:focus {
+  border-color: #0069ff;
+  outline: 0;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(17, 169, 94, .5);
+  color: rgba(3, 27, 78, .7);
+  z-index: 1;
+}
+
 input:not([type]),
 input[type=color],
 input[type=date],
@@ -851,30 +876,7 @@ textarea {
   position: relative;
 }
 
-input:focus:not([type]),
-input:focus[type=color],
-input:focus[type=date],
-input:focus[type=datetime-local],
-input:focus[type=datetime],
-input:focus[type=email],
-input:focus[type=month],
-input:focus[type=number],
-input:focus[type=password],
-input:focus[type=search],
-input:focus[type=tel],
-input:focus[type=text],
-input:focus[type=time],
-input:focus[type=url],
-input:focus[type=week],
-select:focus,
-textarea:focus {
-  border-color: #0069ff;
-  outline: 0;
-  background: #fff;
-  box-shadow: 0 0 2px rgba(17, 169, 94, .5);
-  color: rgba(3, 27, 78, .7);
-  z-index: 1;
-}
+
 
 input:not([type]),
 input[type=datetime],
