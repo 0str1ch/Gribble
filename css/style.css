@@ -853,7 +853,7 @@ input:placeholder-shown + label {
   transform: translateY(1rem);
 }
 
-input:placeholder-shown + input {
+input:placeholder-shown + label * input {
   transform: translateY(-1rem);
 
 }
