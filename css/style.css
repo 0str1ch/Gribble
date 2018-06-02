@@ -853,7 +853,7 @@ input:placeholder-shown + label {
   transform: translateY(1rem);
 }
 
-input:active {
+input:active input:focus {
   padding-top: 16px;
 }
 
