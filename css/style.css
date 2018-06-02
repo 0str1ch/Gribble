@@ -937,6 +937,7 @@ textarea {
   font: inherit;
   font-size: 0.8em;
   color: inherit;
+  box-sizing: border-box;
 }
 
 .formSpacing {
