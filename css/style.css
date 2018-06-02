@@ -848,15 +848,23 @@ label {
   pointer-events: none;
 }
 
-input:placeholder-shown + label {
+input:focus ~ label,
+input:not(:focus):valid ~ label{
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+/*input:placeholder-shown + label {
   opacity: 0;
   transform: translateY(1rem);
 }
 
 input:placeholder-shown + label * input {
   transform: translateY(-1rem);
-
-}
+}*/
 
 input:focus:not([type]),
 input:focus[type=color],
