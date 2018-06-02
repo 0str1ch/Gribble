@@ -647,7 +647,7 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  max-height: 1000px;
+  max-height: 2000px;
 }
 
 .hero-content {
