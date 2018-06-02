@@ -684,7 +684,7 @@ Buttons and Interactions
   transition: all .25s cubic-bezier(.645, .045, .355, 1);
   line-height: 2.5em;
   height: 2.5em;
-  font-size: 1em;
+  font-size: 0.8em;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
