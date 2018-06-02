@@ -853,6 +853,10 @@ input:placeholder-shown + label {
   transform: translateY(1rem);
 }
 
+input:active {
+  padding-top: 16px;
+}
+
 input:focus:not([type]),
 input:focus[type=color],
 input:focus[type=date],
