@@ -639,6 +639,11 @@ UnifiedNav-button--transparent:focus {
   min-height: 30rem;
 }
 
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
 #particles-js {
   position: absolute;
   width: 100%;
