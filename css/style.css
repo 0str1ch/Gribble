@@ -849,7 +849,7 @@ input:focus[type=week],
 select:focus,
 textarea:focus {
   border-color: #0069ff;
-  outline: 0;
+  /*outline: 0;*/
   background: #fff;
   box-shadow: 0 0 2px rgba(17, 169, 94, .5);
   color: rgba(3, 27, 78, .7);
@@ -944,4 +944,15 @@ Tooltips and Hints
   height: 1.2rem;
   line-height: 1.3rem;
   display: block;
+}
+
+/*
+Accessibility
+*/
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
 }
