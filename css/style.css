@@ -834,13 +834,12 @@ Form Styling Stuff
 
 .formGroup {
   position: relative;
-  padding-top: 1.5rem;
 }
 
 label {
   position: absolute;
   top: 0;
-  font-size: var(--font-size-small);
+  font-size: 12px;
   opacity: 1;
   transform: translateY(0);
   transition: all 0.2s ease-out;
