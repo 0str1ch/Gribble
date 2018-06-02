@@ -218,6 +218,10 @@ q {
   quotes: "“" "”";
 }
 
+small {
+  font-size: 0.7em;
+}
+
 .fancy-list ul {
   margin: 0.75em 0;
   padding: 0 1em;
