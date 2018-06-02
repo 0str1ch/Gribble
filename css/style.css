@@ -876,7 +876,7 @@ textarea {
   color: inherit;
 }
 
-.formSpacing *+*, .formRow-spacing+.formRow-spacing {
+.formSpacing {
   margin-top: 1em;
 }
 
