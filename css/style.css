@@ -497,9 +497,9 @@ Desktop Header/Menu
 **/
 
 @media (min-width: 768px) {
-.UnifiedNav {
-  height: 90px;
-}
+  .UnifiedNav {
+    height: 90px;
+  }
 }
 
 .UnifiedNav {
@@ -616,7 +616,7 @@ UnifiedNav-button--transparent:focus {
 
 @media (min-width: 2000px) {
   .hero {
-background-size: 101% !important;
+    background-size: 101% !important;
   }
 }
 
@@ -641,12 +641,10 @@ background-size: 101% !important;
 
 .hero-title {
   color: #fff;
-
 }
 
 .hero-text {
   color: hsla(0, 0%, 100%, .8);
-
 }
 
 .hero-signupBox {
@@ -882,7 +880,8 @@ textarea {
 Tooltips and Hints
 **/
 
-.Hint, .Tooltip-hint {
+.Hint,
+.Tooltip-hint {
   padding: 1px;
   background: #ececec;
   color: #999;
@@ -896,7 +895,8 @@ Tooltips and Hints
   user-select: none;
 }
 
-.Hint:before, .Tooltip-hint:before {
+.Hint:before,
+.Tooltip-hint:before {
   content: "?";
   font-weight: 600;
   font-size: 0.8em;
@@ -905,4 +905,3 @@ Tooltips and Hints
   line-height: 1.3rem;
   display: block;
 }
-
