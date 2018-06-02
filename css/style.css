@@ -776,7 +776,7 @@ UI Components [Cards]
 }
 
 .ClickCard:hover {
-  box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.08), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 20px rgba(3, 27, 78, .1);
   transform: translateY(-5px);
 }
 
@@ -784,7 +784,7 @@ UI Components [Cards]
   padding: 2em;
   min-height: 100%;
   border-radius: 9px;
-  box-shadow: 0 2px 4px rgba(3,27,78,.06);
+  box-shadow: 0 2px 4px rgba(3, 27, 78, .06);
   border: 1px solid #e5e8ed;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0px);
@@ -853,7 +853,7 @@ label {
   pointer-events: none;
 }
 
-input:placeholder-shown + label {
+input:placeholder-shown+label {
   opacity: 0;
   transform: translateY(1rem);
 }
@@ -911,8 +911,6 @@ textarea {
   width: 100%;
   position: relative;
 }
-
-
 
 input:not([type]),
 input[type=datetime],
