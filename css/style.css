@@ -834,6 +834,7 @@ Form Styling Stuff
 
 .formGroup {
   position: relative;
+  overflow: hidden;
 }
 
 label {
