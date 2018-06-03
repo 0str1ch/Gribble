@@ -450,7 +450,8 @@
 	<script type="text/javascript" src="/Gribble/scripts/accessibility.js"></script>
 	<script type="text/javascript" src="/Gribble/scripts/floatpoints.js"></script>
 	<script>
-			sr.reveal('.fooReveal', { useDelay: 'onload', duration: 300, reset: true,  }, 50);
+			window.sr = ScrollReveal({ useDelay: 'onload', reset: true });
+			sr.reveal('.fooReveal', { duration: 300}, 50);
 		  </script>
 </body>
 
