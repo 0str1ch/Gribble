@@ -31,7 +31,25 @@
 	<!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
 	<!-- Smooth Scrolling plugin -->
 	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-
+	<!-- Scroll Load Animation -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script>
+			window.sr = ScrollReveal();
+	  
+			// Add class to <html> if ScrollReveal is supported
+			// Note: this method is deprecated, and only works in version 3
+			if (sr.isSupported()) {
+			  document.documentElement.classList.add('sr');
+			}
+	  
+		  </script>
+	  
+		  <style>
+	  
+			/* Ensure elements load hidden before ScrollReveal runs */
+			.sr .fooReveal { visibility: hidden; }
+	  
+		  </style>
 	<!-- Navigation Config -->
 	<script type="text/javascript">
 		$(document).ready(function () {
@@ -267,12 +285,12 @@
 
 				<div class="ui-Container">
 					<div class="ui-GridContainer pad-XL jcb">
-						<div class="ui-Col-2 margin-bottom">
-							<h1 class="Text-XXL hero-title">Web presence made simple.</h1>
-							<p class="Text-regular hero-text">Get a website created by our innovative designers and hosted on our advanced cloud hosting platform for the same price of just one latte per day. ☕️</p>
+						<div class="ui-Col-2 margin-bottom fooContainer">
+							<h1 class="Text-XXL hero-title fooReveal">Web presence made simple.</h1>
+							<p class="Text-regular hero-text fooReveal">Get a website created by our innovative designers and hosted on our advanced cloud hosting platform for the same price of just one latte per day. ☕️</p>
 						</div>
-						<div class="ui-Col-2-sm">
-							<div class="hero-signupBox rellax">
+						<div class="ui-Col-2-sm fooContainer">
+							<div class="hero-signupBox rellax fooReveal">
 								<h2 class="Text-L txt-center">Sign up and deploy your dream website now.</h2>
 								<form accept-charset="UTF-8" class="formStyle">
 									<div class="formSpacing">
@@ -436,7 +454,9 @@
 	<!-- Smooth Scrool init -->
 	<script type="text/javascript" src="/Gribble/scripts/accessibility.js"></script>
 	<script type="text/javascript" src="/Gribble/scripts/floatpoints.js"></script>
-	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script>
+			sr.reveal('.fooReveal', { container: '.fooContainer', duration: 2000 }, 50);
+		  </script>
 </body>
 
 </html>
