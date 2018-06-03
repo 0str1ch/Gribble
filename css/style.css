@@ -640,7 +640,7 @@ UnifiedNav-button--transparent:focus {
   background: linear-gradient(to right, #2B32B2, #1488CC);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: var(--main-bg-color);
-  background: linear-gradient(11deg, #009efd 0%, #2af598 100% );
+  background: linear-gradient(168deg, #009efd 0%, #2af598 100% );
   background-image: url(../svg/minty-wave2.svg);
   background-position: bottom;
   background-repeat: no-repeat;
