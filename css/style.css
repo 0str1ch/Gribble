@@ -266,6 +266,7 @@ Layout and Structure
 .siteFrame-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  transition: all .25s cubic-bezier(.645, .045, .355, 1);
 }
 
 /**
