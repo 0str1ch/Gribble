@@ -2,7 +2,7 @@
     var config = {
             kitId: 'kxe2lvd',
             scriptTimeout: 3000,
-            async: true
+            async: false
         },
         h = d.documentElement,
         t = setTimeout(function () {
