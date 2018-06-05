@@ -454,7 +454,15 @@
 		  </script>
 			  <script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
 			  <script>
-				tippy('.helper')
+					tippy('.helper', {
+						delay: 100,
+						arrow: true,
+						arrowType: 'round',
+						size: 'small',
+						duration: 500,
+  						animation: 'scale',
+						placement: 'right'
+				})
 				</script>
 
 </body>
