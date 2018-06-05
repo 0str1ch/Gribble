@@ -298,7 +298,7 @@
 											<label for="user_password">Password</label>
 										</div>
 									</div>
-									<button class="ui-Button ui-Button-primary ui-Button-IconRight full-width formSpacing">
+									<button class="ui-Button ui-Button-primary ui-Button-IconRight full-width formSpacing helper" title="Tippy testing this thang out!">
 										Create Account
 										<svg class="ui-Icon ArrowLink-icon" aria-hidden="true">
 											<use xlink:href="#arrow-right-long"></use>
@@ -452,7 +452,10 @@
 			sr.reveal('.heroAnimation', { container: '.hero', duration: 750, useDelay: 'onload', delay: 250 });
 			sr.reveal('.loadReveal', { duration: 300, reset: true });
 		  </script>
-		  	<script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
+			  <script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
+			  <script>
+				tippy('.helper')
+				</script>
 
 </body>
 
