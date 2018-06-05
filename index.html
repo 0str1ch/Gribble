@@ -32,17 +32,20 @@
 	<!-- Scroll Load Animation -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script>
-			window.sr = ScrollReveal();
-			// Add class to <html> if ScrollReveal is supported
-			// Note: this method is deprecated, and only works in version 3
-			if (sr.isSupported()) {
-			  document.documentElement.classList.add('sr');
-			}
-		  </script>
-		  <style>
-			/* Ensure elements load hidden before ScrollReveal runs */
-			.sr .fooReveal { visibility: hidden; }
-		  </style>
+		window.sr = ScrollReveal();
+		// Add class to <html> if ScrollReveal is supported
+		// Note: this method is deprecated, and only works in version 3
+		if (sr.isSupported()) {
+			document.documentElement.classList.add('sr');
+		}
+	</script>
+	<style>
+		/* Ensure elements load hidden before ScrollReveal runs */
+
+		.sr .fooReveal {
+			visibility: hidden;
+		}
+	</style>
 	<!-- Navigation Config -->
 	<script type="text/javascript">
 		$(document).ready(function () {
@@ -280,7 +283,8 @@
 					<div class="ui-GridContainer pad-XL jcb">
 						<div class="ui-Col-2 margin-bottom">
 							<h1 class="Text-XXL hero-title">Web presence made simple.</h1>
-							<p class="Text-regular hero-text">Get a website created by our innovative designers and hosted on our advanced cloud hosting platform for the same price of just one latte per day. ☕️</p>
+							<p class="Text-regular hero-text">Get a website created by our innovative designers and hosted on our advanced cloud hosting platform for the same price
+								of just one latte per day. ☕️</p>
 						</div>
 						<div class="ui-Col-2-sm ">
 							<div class="hero-signupBox rellax">
@@ -319,10 +323,11 @@
 			<section class="ui-Section-short whiteBackground clearTop">
 				<div class="ui-Container">
 					<h2 class="Text-XL txt-center LineLength LineLength-normal-big">
-							We design and host multi-channel user experiences and products on an advanced cloud hosting infrastructure
+						We design and host multi-channel user experiences and products on an advanced cloud hosting infrastructure
 					</h2>
 					<p class="txt-center LineLength LineLength-normal Text-regular">
-							Get a website designed by our forward-thinking designers and hosted on our advanced cloud hosting platform for the same price of just one latte per day. (Or only $0.002 per minute.)
+						Get a website designed by our forward-thinking designers and hosted on our advanced cloud hosting platform for the same price
+						of just one latte per day. (Or only $0.002 per minute.)
 					</p>
 					<div class="txt-center">
 						<a href="/" class="ui-Button ui-Button-primary ui-Button-IconRight loadReveal">
@@ -372,7 +377,8 @@
 									Secure and stable
 								</h3>
 								<p class="margin-top pad-bottom-2x">
-									It's our honor to provide a secure platform to our users, backed by our 24/7/365 tech support and 99.99% uptime SLA for all services.
+									It's our honor to provide a secure platform to our users, backed by our 24/7/365 tech support and 99.99% uptime SLA for all
+									services.
 								</p>
 								<div class="ClickCard-itemLink">
 									Learn about pricing
@@ -410,13 +416,14 @@
 			<section class="ui-Section ui-Section--netBreak">
 				<div class="ui-Container txt-center">
 					<h2 class="Text-XL txt-center LineLength LineLength-normal-big">
-							Need help?
+						Need help?
 					</h2>
 					<p class="txt-center LineLength LineLength-normal Text-regular">
-							Check out our documentation as well as our collection of handy guides to some of the most common issues website owners might run into.
+						Check out our documentation as well as our collection of handy guides to some of the most common issues website owners might
+						run into.
 					</p>
 					<a href="/docs" class="ui-Button ui-Button-outline">
-							View documentation
+						View documentation
 					</a>
 				</div>
 			</section>
@@ -448,32 +455,40 @@
 	<script type="text/javascript" src="/Gribble/scripts/accessibility.js"></script>
 	<script type="text/javascript" src="/Gribble/scripts/floatpoints.js"></script>
 	<script>
-			window.sr = ScrollReveal();
-			sr.reveal('.heroAnimation', { container: '.hero', duration: 750, useDelay: 'onload', delay: 250 });
-			sr.reveal('.loadReveal', { duration: 300, reset: true });
-		  </script>
-			  <script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
-			<script>
-				tippy('.helper', {
-					delay: 100,
-					arrow: true,
-					arrowType: 'round',
-					size: 'small',
-					duration: 500,
-					animation: 'fade',
-					placement: 'right'
-				})
-				window.addEventListener('scroll', () => {
-					for (const popper of document.querySelectorAll('.tippy-popper')) {
-						const instance = popper._tippy
+		window.sr = ScrollReveal();
+		sr.reveal('.heroAnimation', {
+			container: '.hero',
+			duration: 750,
+			useDelay: 'onload',
+			delay: 250
+		});
+		sr.reveal('.loadReveal', {
+			duration: 300,
+			reset: true
+		});
+	</script>
+	<script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
+	<script>
+		tippy('.helper', {
+			delay: 100,
+			arrow: true,
+			arrowType: 'round',
+			size: 'small',
+			duration: 500,
+			animation: 'fade',
+			placement: 'right'
+		})
+		window.addEventListener('scroll', () => {
+			for (const popper of document.querySelectorAll('.tippy-popper')) {
+				const instance = popper._tippy
 
-						if (instance.state.visible) {
-							instance.popperInstance.disableEventListeners()
-							instance.hide()
-						}
-					}
-				})
-			</script>
+				if (instance.state.visible) {
+					instance.popperInstance.disableEventListeners()
+					instance.hide()
+				}
+			}
+		})
+	</script>
 
 </body>
 
