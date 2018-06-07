@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="jsmith">
+	<meta name="apple-mobile-web-app-title" content="jsmith">
+	<meta name="theme-color" content="#2a2a2a">
+	<meta name="msapplication-navbutton-color" content="#2a2a2a">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="msapplication-starturl" content="/">
+	<title>Gribble</title>
+	<meta name="description" content="Hosting at the velocity of innovation." />
+	<meta property="og:title" content="Gribble" />
+	<meta property="og:description" content="Hosting at the velocity of innovation." />
+	<meta property="og:image:secure_url" content="https://richpreview.com/richpreview.png" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/Gribble/scripts/typekit.js"></script>
+	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="dist/hamburgers.css" rel="stylesheet">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" async></script>
+	<script src="/Gribble/scripts/rellax.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.js" async></script>
+	<!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+	<!-- Smooth Scrolling plugin -->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js" async></script>
+	<!-- Scroll Load Animation -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script>
+		window.sr = ScrollReveal();
+		// Add class to <html> if ScrollReveal is supported
+		// Note: this method is deprecated, and only works in version 3
+		if (sr.isSupported()) {
+			document.documentElement.classList.add('sr');
+		}
+	</script>
+	<style>
+		/* Ensure elements load hidden before ScrollReveal runs */
+
+		.sr .fooReveal {
+			visibility: hidden;
+		}
+	</style>
+	<!-- Navigation Config -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $menu = $("#my-menu").mmenu({
+				"extensions": [
+					"fx-listitems-fade",
+					"border-none"
+				],
+
+				//   options
+				offCanvas: {
+					pageSelector: "#app",
+					position: "right",
+					zposition: "back"
+				},
+
+				"navbars": [{
+					"position": "bottom",
+					"content": [
+						"<a class='fa fa-envelope' href='mailto:hello@smithed,xyz/'></a>",
+						"<a class='fa fa-facebook' href='#/'></a>"
+					]
+				}],
+				navbar: {
+					add: false
+				},
+				backButton: {
+					close: "true"
+				},
+				"setSelected": {
+					"hover": true,
+					"current": true
+				}
+			});
+			var $icon = $("#my-icon");
+			var API = $menu.data("mmenu");
+
+			$icon.on("click", function () {
+				API.open();
+			});
+
+			API.bind("open:finish", function () {
+				setTimeout(function () {
+					$icon.addClass("is-active");
+				}, 100);
+			});
+			API.bind("close:finish", function () {
+				setTimeout(function () {
+					$icon.removeClass("is-active");
+				}, 100);
+			}); {
+				// configuration
+				offCanvas: {
+					pageSelector: "#root"
+				}
+			};
+		});
+	</script>
+
+</head>
+
+<body>
+	<div style="display: none;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<symbol viewBox="0 0 32 32" id=arrow-down xmlns="http://www.w3.org/2000/svg">
+				<path d="M31.296 7.68c-.256-.32-.704-.512-1.216-.512-.448 0-.896.192-1.216.512L16 20.736 3.2 7.68c-.256-.32-.704-.512-1.216-.512-.448 0-.896.192-1.216.448S.256 8.32.256 8.768c0 .512.192.96.512 1.28L14.72 24.32c.32.32.704.512 1.152.512.256 0 .512-.064.768-.192.128-.064.256-.128.384-.128l.128-.064 14.016-14.336c.768-.64.704-1.728.128-2.432z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-down-long xmlns="http://www.w3.org/2000/svg">
+				<path d="M14.32 2v23.84l-4.88-4.96c-.64-.64-1.76-.64-2.4 0-.32.32-.48.72-.48 1.2s.16.88.48 1.2l7.84 7.84c.08.08.16.16.32.24.08.08.16.08.24.16h.08c.08 0 .16.08.24.08.24.08.48.08.64 0 .08 0 .16 0 .24-.08h.08c.08 0 .16-.08.24-.08l.08-.08.24-.24 7.84-7.84c.32-.32.48-.72.48-1.2s-.16-.88-.48-1.2c-.32-.32-.72-.48-1.2-.48s-.88.16-1.2.48l-4.88 4.96V2c0-.96-.8-1.68-1.68-1.68-1.12 0-1.84.72-1.84 1.68z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-filter-down xmlns="http://www.w3.org/2000/svg">
+				<path fill="#444" d="M30.8 9.04c-.24-.48-.72-.8-1.2-.8H2.4c-.48 0-.96.32-1.2.8s-.16.96.24 1.36l13.6 12.88c.24.32.64.48.96.48s.72-.16.96-.48l13.6-12.88c.4-.4.48-.88.24-1.36z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-filter-up xmlns="http://www.w3.org/2000/svg">
+				<path fill="#444" d="M30.8 22.96c-.24.48-.72.8-1.2.8H2.4c-.48 0-.96-.32-1.2-.8s-.16-.96.24-1.36l13.6-12.88c.24-.32.64-.48.96-.48s.72.16.96.48l13.6 12.88c.4.4.48.88.24 1.36z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-left xmlns="http://www.w3.org/2000/svg">
+				<path d="M11.264 16.064L24.448 3.456c.32-.32.512-.768.512-1.28 0-.448-.192-.896-.512-1.216-.64-.64-1.856-.64-2.496 0l-14.4 13.824c-.32.32-.512.768-.512 1.216s.192.896.512 1.216l14.336 13.76c.32.32.768.512 1.216.512s.896-.192 1.216-.512l.064-.128c.32-.384.448-.768.448-1.088 0-.448-.192-.832-.512-1.152L11.264 16.064z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-left-long xmlns="http://www.w3.org/2000/svg">
+				<path d="M30 14.32H6.16l4.96-4.88c.64-.64.64-1.76 0-2.4-.32-.32-.72-.48-1.2-.48s-.88.16-1.2.48L.8 14.8c-.08.08-.16.16-.24.32-.08.08-.08.16-.16.24v.08c0 .08-.08.16-.08.24-.08.24-.08.48 0 .64 0 .08 0 .16.08.24v.08c0 .08.08.16.08.24l.08.08.24.24 7.84 7.84c.32.32.72.48 1.2.48s.88-.16 1.2-.48c.32-.32.48-.72.48-1.2s-.16-.88-.48-1.2l-4.96-4.88h23.84c.96 0 1.68-.8 1.68-1.68.08-1.04-.64-1.76-1.6-1.76z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-right xmlns="http://www.w3.org/2000/svg">
+				<path d="M24.448 14.784L10.048.96c-.64-.64-1.856-.64-2.496 0-.32.32-.512.768-.512 1.28 0 .448.192.896.512 1.216l13.12 12.608-13.12 12.608c-.32.32-.512.704-.512 1.152 0 .32.128.64.448 1.088l.064.128c.32.32.768.512 1.216.512s.896-.192 1.216-.512L24.32 17.28c.32-.32.512-.768.512-1.216s-.064-.96-.384-1.28z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-right-long xmlns="http://www.w3.org/2000/svg">
+				<path d="M2 17.68h23.84l-4.96 4.88c-.64.64-.64 1.76 0 2.4.32.32.72.48 1.2.48s.88-.16 1.2-.48l7.84-7.84c.08-.08.16-.16.24-.32.08-.08.08-.16.16-.24v-.08c0-.08.08-.16.08-.24.08-.24.08-.48 0-.64 0-.08 0-.16-.08-.24v-.08c0-.08-.08-.16-.08-.24l-.08-.08-.24-.24-7.84-7.84c-.32-.32-.72-.48-1.2-.48s-.88.16-1.2.48c-.32.32-.48.72-.48 1.2s.16.88.48 1.2l4.96 4.88H2c-.96 0-1.68.8-1.68 1.68 0 1.12.72 1.84 1.68 1.84z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-up xmlns="http://www.w3.org/2000/svg">
+				<path d="M31.04 21.952l-13.824-14.4c-.64-.64-1.856-.64-2.432 0L.96 21.952a1.862 1.862 0 0 0 0 2.496c.32.32.768.512 1.28.512s.896-.192 1.216-.512l12.608-13.12 12.608 13.12c.32.32.704.512 1.152.512.32 0 .64-.128 1.152-.512.704-.704.704-1.856.064-2.496z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=arrow-up-long xmlns="http://www.w3.org/2000/svg">
+				<path d="M17.68 30V6.16l4.88 4.96c.64.64 1.76.64 2.4 0 .32-.32.48-.72.48-1.2s-.16-.88-.48-1.2L17.2.8c-.08-.08-.16-.16-.32-.24-.08-.08-.16-.08-.24-.16h-.08c-.08 0-.16-.08-.24-.08-.24-.08-.48-.08-.64 0-.08 0-.16 0-.24.08h-.08c-.08 0-.16.08-.24.08l-.08.08-.24.24-7.84 7.84c-.32.32-.48.72-.48 1.2s.16.88.48 1.2c.32.32.72.48 1.2.48s.88-.16 1.2-.48l4.88-4.96v23.84c0 .96.8 1.68 1.68 1.68 1.04.08 1.76-.64 1.76-1.6z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 35" id=asterik xmlns="http://www.w3.org/2000/svg">
+				<path d="M32 23.488l-11.12-6.42 11.118-6.42-2.409-4.224-11.091 6.422V0H13.62v12.841L2.468 6.421.015 10.644l11.118 6.423L0 23.492l2.467 4.224 11.154-6.424v12.844h4.877V21.29l11.093 6.422L32 23.488z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=check xmlns="http://www.w3.org/2000/svg">
+				<path d="M30.72 5.824a1.816 1.816 0 0 0-2.56 0l-16.64 16.64-7.744-7.744c-.64-.64-1.856-.64-2.496 0a1.816 1.816 0 0 0 0 2.56l8.96 8.96c.32.32.768.512 1.216.512.256 0 .832 0 1.344-.512L30.72 8.32a1.739 1.739 0 0 0 0-2.496z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=close xmlns="http://www.w3.org/2000/svg">
+				<path d="M29.12 26.816l-10.88-10.88L29.12 5.184c.32-.32.448-.704.448-1.088 0-.448-.192-.832-.448-1.088-.576-.576-1.664-.576-2.24 0L16.064 13.76 5.12 2.816c-.576-.576-1.664-.576-2.24 0-.64.64-.64 1.6 0 2.24l10.944 11.008L2.88 26.944c-.32.32-.448.704-.448 1.088 0 .448.192.832.448 1.088s.64.448 1.024.448c.448 0 .896-.256 1.088-.576l10.944-10.816L26.88 29.184c.256.256.64.448 1.024.448s.832-.192 1.152-.576c.64-.64.64-1.6.064-2.24z"
+				/>
+			</symbol>
+			<symbol viewBox="0 0 18.9 14.5" id=email xmlns="http://www.w3.org/2000/svg">
+				<path d="M17.6 1.2v12H1.2v-12h16.4M18.9 0H0v14.5h18.9V0z" />
+				<path d="M9.6 10.9l-9-9.4.9-.9 8.1 8.5 8-8.5.9.9" />
+				<path d="M11.574 7.314l.943-.896 5.993 6.308-.943.895zM.608 12.76L6.74 6.31l.942.896-6.13 6.45z" />
+			</symbol>
+			<symbol viewBox="0 0 32 32" id=exclamation xmlns="http://www.w3.org/2000/svg">
+				<path class=arst0 d="M13.5.7l.8 22.4h4.1L19.2.7zM16.2 25.3c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3c.3-1.4-1.1-3-3-3z" />
+			</symbol>
+		</svg>
+	</div>
+	<div id="app" class="siteFrame">
+		<main class="siteFrame-body">
+			<div id="header" class="hero">
+				<!-- MOBILE NAV MENU-->
+				<div class="mobile-menu">
+					<nav id="my-menu">
+						<ul class="removeList">
+							<li>
+								<a href="/">Home</a>
+							</li>
+							<li>
+								<a href="/about/">About us</a>
+							</li>
+							<li>
+								<a href="/about/">Pricing</a>
+							</li>
+							<li>
+								<a href="/contact/">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<button id="my-icon" class="hamburger hamburger--arrow-r" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+					<div id="logo" class="flex">
+						<a href="/" class="logo-link">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+							    x="0px" y="0px" width="27px" height="26.8px" viewBox="0 0 27 26.8" style="enable-background:new 0 0 27 26.8;" xml:space="preserve">
+								<style type="text/css">
+									.st0 {
+										fill: #ffffff;
+									}
+								</style>
+								<defs>
+								</defs>
+								<g>
+									<path class="st0" d="M27,12.5c0,8.3-5.4,14.3-13.4,14.3C5.8,26.8,0,21.2,0,13.4C0,5.7,5.7,0,13.5,0c6.7,0,12.1,4.2,13.2,10.1h-7.4
+   								c-0.9-2.1-3.2-3.5-5.7-3.5c-3.8,0-6.3,2.7-6.3,6.7c0,4,2.5,6.7,6.3,6.7c2.6,0,4.9-1.3,5.7-3.2l-5.8,0l2.5-4.3L27,12.5z"
+									/>
+								</g>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<!-- NAV MENU -->
+				<header class="UnifiedNav">
+					<div class="desktop-menu ui-Container">
+						<ul class="UnifiedNav-list">
+							<li>
+								<a href="/" class="UnifiedNav-siteLogo">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+									    x="0px" y="0px" width="27px" height="26.8px" viewBox="0 0 27 26.8" style="enable-background:new 0 0 27 26.8;" xml:space="preserve">
+										<style type="text/css">
+											.st0 {
+												fill: #ffffff;
+											}
+										</style>
+										<defs>
+										</defs>
+										<g>
+											<path class="st0" d="M27,12.5c0,8.3-5.4,14.3-13.4,14.3C5.8,26.8,0,21.2,0,13.4C0,5.7,5.7,0,13.5,0c6.7,0,12.1,4.2,13.2,10.1h-7.4
+										c-0.9-2.1-3.2-3.5-5.7-3.5c-3.8,0-6.3,2.7-6.3,6.7c0,4,2.5,6.7,6.3,6.7c2.6,0,4.9-1.3,5.7-3.2l-5.8,0l2.5-4.3L27,12.5z"
+											/>
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li class="UnifiedNav-listItem UnifiedNav-listItem--extraSpace">
+								<a href="#" class="UnifiedNav-link UnifiedNav-link--products">
+									<span class="UnifiedNav-linkText">Products</span>
+								</a>
+							</li>
+							<li class="UnifiedNav-listItem">
+								<a href="#" class="UnifiedNav-link UnifiedNav-link--customers">
+									<span class="UnifiedNav-linkText">Customers</span>
+								</a>
+							</li>
+							<li class="UnifiedNav-listItem">
+								<a href="#" class="UnifiedNav-link">
+									<span class="UnifiedNav-linkText">Community</span>
+								</a>
+							</li>
+							<li class="UnifiedNav-listItem UnifiedNav-spaceRight">
+								<a href="#" class="UnifiedNav-link UnifiedNav-link--pricing">
+									<span class="UnifiedNav-linkText">Pricing</span>
+								</a>
+							</li>
+							<li class="UnifiedNav-listItem UnifiedNav-listItem--extraSpace">
+								<a href="#" class="UnifiedNav-link">Docs</a>
+							</li>
+							<li class="UnifiedNav-listItem">
+								<a href="#" class="UnifiedNav-link UnifiedNav-link--support">
+									<span class="UnifiedNav-linkText">Support</span>
+								</a>
+								<li class="UnifiedNav-listItem">
+									<a href="#" class="UnifiedNav-link">Login</a>
+								</li>
+								<li class="UnifiedNav-listItem">
+									<a href="#" class="UnifiedNav-button--transparent">Sign Up</a>
+								</li>
+						</ul>
+					</div>
+				</header>
+				<!-- END NAV MENU -->
+
+				<div class="ui-Container">
+					<div class="ui-GridContainer pad-XL jcb">
+						<div class="ui-Col-2 margin-bottom">
+							<h1 class="Text-XXL hero-title">Web presence made simple.</h1>
+							<p class="Text-regular hero-text">Get a website created by our innovative designers and hosted on our advanced cloud hosting platform for the same price
+								of just one latte per day. ☕️</p>
+						</div>
+						<div class="ui-Col-2-sm ">
+							<div class="hero-signupBox rellax">
+								<h2 class="Text-L txt-center">Sign up and deploy your dream website now.</h2>
+								<form accept-charset="UTF-8" class="formStyle">
+									<div class="formSpacing">
+										<div class="formGroup">
+											<input id="user_email" name="user[email]" type="email" placeholder="Email address" required="" autocomplete="off">
+											<label for="user_email">Email address</label>
+										</div>
+									</div>
+									<div class="formSpacing">
+										<div class="formGroup">
+											<input id="user_password" name="user[password]" type="password" placeholder="Password" size="30" required="" autocomplete="off">
+											<label for="user_password">Password</label>
+										</div>
+									</div>
+									<button class="ui-Button ui-Button-primary ui-Button-IconRight full-width formSpacing helper" title="Tippy testing this thang out!">
+										Create Account
+										<svg class="ui-Icon ArrowLink-icon" aria-hidden="true">
+											<use xlink:href="#arrow-right-long"></use>
+										</svg>
+									</button>
+								</form>
+								<div class="formTOS formSpacing txt-center">
+									<small>
+										By signing up you agree to the
+										<a href="#">Terms of Service</a>.
+									</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="ui-Section-short whiteBackground clearTop">
+				<div class="ui-Container">
+					<h2 class="Text-XL txt-center LineLength LineLength-normal-big">
+						We design and host multi-channel user experiences and products on an advanced cloud hosting infrastructure
+					</h2>
+					<p class="txt-center LineLength LineLength-normal Text-regular">
+						Get a website designed by our forward-thinking designers and hosted on our advanced cloud hosting platform for the same price
+						of just one latte per day. (Or only $0.002 per minute.)
+					</p>
+					<div class="txt-center">
+						<a href="/" class="ui-Button ui-Button-primary ui-Button-IconRight loadReveal">
+							Create Account
+							<svg class="ui-Icon ArrowLink-icon" aria-hidden="true">
+								<use xlink:href="#arrow-right-long"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+			<hr class="Rule-bold">
+			<section class="ui-Section-short whiteBackground">
+				<div class="ui-Container">
+					<div class="ui-GridContainer bui-u-flexDeepMatch">
+						<div class="ui-Col-3">
+							<a href="#" class="ClickCard ClickCard-itemContent loadReveal">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 442.5" class="ui-Icon ui-Icon-Large">
+									<path d="M414.7,286.7c51.4,0,93.3-41.3,93.3-92.1a91.56,91.56,0,0,0-39.2-75C459.3,51.2,400.2,0,329.6,0A141,141,0,0,0,210.8,64.7,103.45,103.45,0,0,0,82.1,103.3C35.7,108.8,0,148.1,0,194.6c0,50.8,41.8,92.1,93.3,92.1H245.8v57.4h-41v41H49.2v16.4H204.9v41h98.3v-41H458.9V385.1H303.2v-41h-41V286.7ZM286.8,426H221.3V360.5h65.5ZM16.4,194.6c0-39.4,31.2-72.5,71.1-75.4l4.3-.3,2.2-3.7a87,87,0,0,1,74.9-42.9,88,88,0,0,1,41.2,10.3l7.1,3.8,3.9-7a124.47,124.47,0,0,1,108.5-63c63.5,0,116.5,46.8,123.4,108.9l.4,3.9,3.3,2.1a75.23,75.23,0,0,1,34.9,63.4c0,41.8-34.5,75.7-76.9,75.7H93.3C50.9,270.4,16.4,236.4,16.4,194.6Z"
+									/>
+									<rect x="245.8" y="385.1" width="16.4" height="16.4" />
+									<path d="M327.7,33V49.4a85.91,85.91,0,0,1,85.8,85.8h16.4A102.26,102.26,0,0,0,327.7,33Z" />
+								</svg>
+								<h3 class="Text-L margin-top">
+									Cloud infrastructure
+								</h3>
+								<p class="margin-top pad-bottom-2x">
+									Save money and stop wasting your time trying to build your own website, ya dummy.
+								</p>
+								<div class="ClickCard-itemLink">
+									Learn about us
+									<svg class="ui-Icon ArrowLink-icon" aria-hidden="true">
+										<use xlink:href="#arrow-right-long"></use>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="ui-Col-3">
+							<a href="#" class="ClickCard ClickCard-itemContent loadReveal">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 442.5" class="ui-Icon ui-Icon-Large">
+									<path d="M414.7,286.7c51.4,0,93.3-41.3,93.3-92.1a91.56,91.56,0,0,0-39.2-75C459.3,51.2,400.2,0,329.6,0A141,141,0,0,0,210.8,64.7,103.45,103.45,0,0,0,82.1,103.3C35.7,108.8,0,148.1,0,194.6c0,50.8,41.8,92.1,93.3,92.1H245.8v57.4h-41v41H49.2v16.4H204.9v41h98.3v-41H458.9V385.1H303.2v-41h-41V286.7ZM286.8,426H221.3V360.5h65.5ZM16.4,194.6c0-39.4,31.2-72.5,71.1-75.4l4.3-.3,2.2-3.7a87,87,0,0,1,74.9-42.9,88,88,0,0,1,41.2,10.3l7.1,3.8,3.9-7a124.47,124.47,0,0,1,108.5-63c63.5,0,116.5,46.8,123.4,108.9l.4,3.9,3.3,2.1a75.23,75.23,0,0,1,34.9,63.4c0,41.8-34.5,75.7-76.9,75.7H93.3C50.9,270.4,16.4,236.4,16.4,194.6Z"
+									/>
+									<rect x="245.8" y="385.1" width="16.4" height="16.4" />
+									<path d="M327.7,33V49.4a85.91,85.91,0,0,1,85.8,85.8h16.4A102.26,102.26,0,0,0,327.7,33Z" />
+								</svg>
+								<h3 class="Text-L margin-top">
+									Secure and stable
+								</h3>
+								<p class="margin-top pad-bottom-2x">
+									It's our honor to provide a secure platform to our users, backed by our 24/7/365 tech support and 99.99% uptime SLA for all
+									services.
+								</p>
+								<div class="ClickCard-itemLink">
+									Learn about pricing
+									<svg class="ui-Icon ArrowLink-icon" aria-hidden="true">
+										<use xlink:href="#arrow-right-long"></use>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="ui-Col-3">
+							<a href="#" class="ClickCard ClickCard-itemContent loadReveal">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 442.5" class="ui-Icon ui-Icon-Large">
+									<path d="M414.7,286.7c51.4,0,93.3-41.3,93.3-92.1a91.56,91.56,0,0,0-39.2-75C459.3,51.2,400.2,0,329.6,0A141,141,0,0,0,210.8,64.7,103.45,103.45,0,0,0,82.1,103.3C35.7,108.8,0,148.1,0,194.6c0,50.8,41.8,92.1,93.3,92.1H245.8v57.4h-41v41H49.2v16.4H204.9v41h98.3v-41H458.9V385.1H303.2v-41h-41V286.7ZM286.8,426H221.3V360.5h65.5ZM16.4,194.6c0-39.4,31.2-72.5,71.1-75.4l4.3-.3,2.2-3.7a87,87,0,0,1,74.9-42.9,88,88,0,0,1,41.2,10.3l7.1,3.8,3.9-7a124.47,124.47,0,0,1,108.5-63c63.5,0,116.5,46.8,123.4,108.9l.4,3.9,3.3,2.1a75.23,75.23,0,0,1,34.9,63.4c0,41.8-34.5,75.7-76.9,75.7H93.3C50.9,270.4,16.4,236.4,16.4,194.6Z"
+									/>
+									<rect x="245.8" y="385.1" width="16.4" height="16.4" />
+									<path d="M327.7,33V49.4a85.91,85.91,0,0,1,85.8,85.8h16.4A102.26,102.26,0,0,0,327.7,33Z" />
+								</svg>
+								<h3 class="Text-L margin-top">
+									Honest pricing
+								</h3>
+								<p class="margin-top pad-bottom-2x">
+									You shouldn't have to have a CPA on staff to figure out your monthly bill for your website.
+								</p>
+								<div class="ClickCard-itemLink">
+									Learn about hosting
+									<svg class="ui-Icon ArrowLink-icon" aria-hidden="true">
+										<use xlink:href="#arrow-right-long"></use>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ui-Section ui-Section--netBreak">
+				<div class="ui-Container txt-center">
+					<h2 class="Text-XL txt-center LineLength LineLength-normal-big">
+						Need help?
+					</h2>
+					<p class="txt-center LineLength LineLength-normal Text-regular">
+						Check out our documentation as well as our collection of handy guides to some of the most common issues website owners might
+						run into.
+					</p>
+					<a href="/docs" class="ui-Button ui-Button-outline">
+						View documentation
+					</a>
+				</div>
+			</section>
+		</main>
+		<div id="footer">
+
+		</div>
+	</div>
+	<script type="text/javascript" src="/Gribble/scripts/retina.min.js"></script>
+	<!-- Retina Images init-->
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
+	<script>
+		// Also can pass in optional settings block
+		var rellax = new Rellax('.rellax', {
+			speed: -0.5,
+			center: false,
+			round: true,
+			vertical: true,
+			horizontal: false
+		});
+	</script>
+	<script>
+		const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+		observer.observe();
+	</script>
+	<!-- Smooth Scrool init -->
+	<script type="text/javascript" src="/Gribble/scripts/accessibility.js"></script>
+	<script type="text/javascript" src="/Gribble/scripts/floatpoints.js"></script>
+	<script>
+		window.sr = ScrollReveal();
+		sr.reveal('.heroAnimation', {
+			container: '.hero',
+			duration: 750,
+			useDelay: 'onload',
+			delay: 250
+		});
+		sr.reveal('.loadReveal', {
+			duration: 300,
+			reset: true
+		});
+	</script>
+	<script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
+	<script>
+		tippy('.helper', {
+			delay: 100,
+			arrow: true,
+			arrowType: 'round',
+			size: 'small',
+			duration: 500,
+			animation: 'fade',
+			placement: 'right'
+		})
+		window.addEventListener('scroll', () => {
+			for (const popper of document.querySelectorAll('.tippy-popper')) {
+				const instance = popper._tippy
+
+				if (instance.state.visible) {
+					instance.popperInstance.disableEventListeners()
+					instance.hide()
+				}
+			}
+		})
+	</script>
+
+</body>
+
+</html>
